@@ -1,0 +1,48 @@
+package negocio;
+
+public class Gerente extends Colaborador{//"extends" -> Diz que a classe gerente é FILHA da outra classe, no caso, colaborador.
+	//Propriedades da classe
+	private double bonus = 0;
+
+	
+	
+	
+	
+	//Metodos construtores da classe
+	public Gerente() {
+		super(); //A "super()" classe é sempre a classe PAI!
+	}
+	
+
+	public Gerente(int matricula, String nome, double salario, double bonus) {
+		super(matricula, nome, salario);
+		this.bonus = bonus;
+	}
+
+	
+	
+	
+	
+	//Metodos de acesso da classe
+	public double getBonus() {
+		return bonus;
+	}
+
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+	
+	
+	
+	
+	
+	
+	//Métodos sobrescritos da hierarquia
+	public double getSalario() {//é sobrescrito pq o metodo getSalario já existe, voce herdou esse metodo
+		return (super.getSalario() + this.getBonus());
+		//Essa hierarquia só diz que as coisas foram herdadas do pai para o filho.
+	}
+	
+		
+}

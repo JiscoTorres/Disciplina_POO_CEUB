@@ -1,0 +1,12 @@
+package negocio;
+
+public class Gerente extends Colaborador{//extends -> diz que a classe gerente é FILHA da outra classe, no caso, colaborador
+	//Propriedades da classe
+	private double bonus = 0;
+
+	public Gerente() {
+		super();
+	}
+		
+		
+}

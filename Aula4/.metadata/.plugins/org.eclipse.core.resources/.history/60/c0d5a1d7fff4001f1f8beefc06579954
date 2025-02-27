@@ -1,0 +1,29 @@
+package negocio;
+
+public class Gerente extends Colaborador{//extends -> diz que a classe gerente é FILHA da outra classe, no caso, colaborador
+	//Propriedades da classe
+	private double bonus = 0;
+
+	
+	//Metodos construtores da classe
+	public Gerente() {
+		super();
+	}
+	
+
+	public Gerente(int matricula, String nome, double salario, double bonus) {
+		super(matricula, nome, salario);
+		this.bonus = bonus;
+	}
+
+
+	public double getBonus() {
+		return bonus;
+	}
+
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+		
+}
