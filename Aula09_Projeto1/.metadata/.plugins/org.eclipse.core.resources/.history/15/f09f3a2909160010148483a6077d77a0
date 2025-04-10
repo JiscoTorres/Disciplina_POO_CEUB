@@ -1,0 +1,32 @@
+package apresentacao;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JComboBox;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class ControladorLimpar implements ActionListener{
+	//Propriedades da Classe 
+	private JTextField txtNome = null;
+	private JRadioButton optMasculino = null;
+	private JTextField txtEndereco = null;
+	private JComboBox<String> cboUf = null;
+	
+	
+	// Métodos Construtores Cheio da Classe
+	public ControladorLimpar(JTextField txtNome, JRadioButton optMasculino, JTextField txtEndereco,
+			JComboBox<String> cboUf) {
+		super();
+		this.txtNome = txtNome;
+		this.optMasculino = optMasculino;
+		this.txtEndereco = txtEndereco;
+		this.cboUf = cboUf;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		System.exit(0);
+	}
+
+}

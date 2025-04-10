@@ -1,0 +1,9 @@
+package negocio;
+
+public class Pessoa {
+//Propriedades da Classe
+	private String nome = "";
+	private boolean sexo = false;
+	private String endereco = "";
+	private Uf objUf = null;
+}

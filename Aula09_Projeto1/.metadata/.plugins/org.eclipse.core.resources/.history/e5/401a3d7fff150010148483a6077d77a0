@@ -1,0 +1,52 @@
+package negocio;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Uf {
+// Propriedades da Classe
+	private String sigla = "";
+
+	
+	
+// Métodos Construtores da Classe
+	public Uf() {
+		super();
+	}
+	
+	
+	public Uf(String sigla) {
+		super();
+		this.sigla = sigla;
+	}
+
+
+	
+// Métodos de Acesso da Classe (GET e SET)
+	public String getSigla() {
+		return sigla;
+	}
+
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+
+	
+// Métodos da Classe
+	public static Collection<Uf> getTodos() throws Exception {
+		ArrayList<Uf> colecao = new ArrayList<Uf>();
+		colecao.add(new Uf("DF"));
+		colecao.add(new Uf("SP"));
+		colecao.add(new Uf("MG"));
+		colecao.add(new Uf("MS"));
+		colecao.add(new Uf("CE"));
+		colecao.add(new Uf("AM"));
+		colecao.add(new Uf("AP"));
+		colecao.add(new Uf("AC"));
+		
+		
+		return colecao;
+	}
+	
+	
+}
