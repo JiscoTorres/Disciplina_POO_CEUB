@@ -1,0 +1,82 @@
+package apresentacao;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class VisaoPessoa extends JFrame{
+//Propriedades da Classe
+	private static final long serialVersionUID = 1L; // Serve só para acabar com os avisos AMARELOS
+
+	
+	 // -> Caixa de Texto - Nome
+	 private JLabel lblNome = new JLabel ("Nome"); //lbl no nome "lblNome" só para dizer que é uma label
+	 private JTextField txtNome = new JTextField ();
+	
+	
+	 
+	// -> Opções Alternativas de Sexo
+	   private JLabel lblSexo = new JLabel ("Sexo");
+	   private ButtonGroup btgSexo = new ButtonGroup();
+	   private JRadioButton optMasculino = new JRadioButton ("Masculino");
+	   private JRadioButton optFeminino = new JRadioButton ("Feminino");
+	   private JRadioButton optNaoBinarie = new JRadioButton ("Não Binárie");
+	   
+	   
+	   
+	// -> Caixa de Texto - Endereço
+		 private JLabel lblEndereco= new JLabel ("Endereço"); 
+		 private JTextField txtEndereco = new JTextField ();
+		
+	   
+	// -> Caixa de Opções
+		   private JLabel lblUf = new JLabel ("Uf");
+		   private JComboBox<String> cboUf = new JComboBox<String> ();
+		   
+		   
+	// -> Botão
+		   private JButton btnGravar = new JButton ("Gravar"); //Criação o controle
+		   private JButton btnLimpar = new JButton ("Limpar"); //Criação o controle
+		   private JButton btnSair = new JButton ("Sair"); //Criação o controle
+		   
+		   
+		   
+// Método Principal de Execução da Classe
+	
+		   public static void main(String[] args) {
+		        new VisaoPessoa().setVisible(true);
+		    }
+
+		  
+		 
+
+// Métodos  Construtor da Classe
+		   
+		   public VisaoPessoa() {
+			   // -> Configuração da Janela
+			   setTitle("Cadastro de Pessoas");
+		        setSize(400,500); //1024 tamanho da base, 768 tamanho da altura
+		        setDefaultCloseOperation(EXIT_ON_CLOSE);
+		        setLocationRelativeTo(null);
+		        setLayout (null);// se não fizer isso, o java controla a posição dos controles, então fazer isso pra voce mesmo congurar a posição como quiser
+		        
+		       // -> Configuração do Nome
+		        lblNome.setBounds (10, 10, 200, 20); // (x, y, Largura, altura)
+		        add(lblNome);
+		        
+		        txtNome.setBounds (10, 30, 360, 20); // (x, y, Largura, altura)
+		        add(txtNome); // Caixa para o usuario escrever texto
+		        
+		        
+		        
+		        
+		
+		   }
+	
+	
+
+}

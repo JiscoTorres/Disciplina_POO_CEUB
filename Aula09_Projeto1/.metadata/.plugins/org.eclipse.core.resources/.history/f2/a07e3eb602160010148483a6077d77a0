@@ -1,0 +1,31 @@
+package apresentacao;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class VisaoPessoa extends JFrame{
+//Propriedades da Classe
+	private static final long serialVersionUID = 1L; // Serve só para acabar com os avisos AMARELOS
+
+	
+	 // -> caixa de texto
+	 private JLabel lblNome = new JLabel ("Nome"); //lbl no nome "lblNome" só para dizer que é uma label
+	 private JTextField txtNome = new JTextField ();
+	
+	
+	 
+	// -> Opções alternativas de Sexo
+	   private JLabel lblSexo = new JLabel ("Sexo");
+	   private JRadioButton optMasculino = new JRadioButton ("Masculino");
+	   private JRadioButton optFeminino = new JRadioButton ("Feminino");
+	   private JRadioButton optNaoBinarie = new JRadioButton ("Não Binárie");
+	   private ButtonGroup btgSexo = new ButtonGroup();
+// Métodos Construtores da Classe
+	
+	
+// Métodos  de Acesso da Classe (GET e SET)
+	
+	
+
+}
